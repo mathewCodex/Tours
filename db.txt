@@ -1,0 +1,206 @@
+ DATABASE=mongodb+srv://mathewCodex:for12345@cluster1.avjfq.mongodb.net/Tours?retryWrites=true&w=majority
+/////Zuri task 
+> Create a portfolio having the following HTML pages:
+1. Home: The homepage should contain your data (bio).
+
+2. About: The contact page should contain links to your social media.
+
+3. Contact: The about me page should contain brief information about you.
+
+
+=> Create a server using the HTTP module.
+=> Create routes that render the HTML pages you created on a browser.
+=> The base URL of your app should render the homepage.
+=> There should be a /home route that redirects to the base of your app.
+=> Push your code to GitHub.
+Note: 1. No third-party dependencies
+          2. You don’t need to style your HTML pages
+ 
+
+Submission Mode: Accessible GitHub Link
+
+Resources: https://w2.zuriboard.com/post/86
+
+../////
+ Push all week 3 to week 5 assignments to a GitHub repo called “Assignments''. The repository should have three branches named week3, week4, and week5 on GitHub.
+b)  Update your profile with your GitHub link.
+
+c) Setup your [username].md file on GitHub using the link
+
+Submission Method:  Repository link  called Assignments e.g  https://www.github.com/isiakaabd/assignments
+
+ ///////
+ Task title: Booking Flight API
+Task Objective: Create a rest API that has the following features: 
+
+1. Add/Book Flight
+2. Get all Flight
+3. Get single Flight
+4. Update/Edit Flight
+5. Delete Flight
+
+for flight let it have the following properties
+{
+title: "flight to canada",
+time: 1pm,
+price: 26000,
+date: "26-06-2022"
+}
+
+Clone this GitHub repo:
+Repository Link or https://github.com/bee-solve/booking-flight-api
+ Make changes to the index.js file. Create your own repository and push your code to your created repository. 
+ Submit the link to your created GitHub repository.
+ /////
+ k Objective: Setting up of mongo DB connection in a Node.Js server as well as performance of CRUD operations
+
+Task Description: Create a Node.js server using any framework of choice (optional) and appropriate folder structure
+ (routes, controllers, models, etc.), which will perform the following functions:
+1. Add a Todo task to a Todo collection
+2. Update a particular Todo task
+3. Delete Todo task
+4. Retrieve all Todo tasks (pagination optional)
+
+Each Todo document should contain at least the following fields: _id, title, description, timestamp.
+
+You can use either a local mongoDB instance or a hosted one on any provider of choice.
+
+Push your code to GitHub and submit your accessible GitHub Link.mongom
+/////////////////////////////HNG
+# Front-End Stage 1 Task
+
+<aside>
+💡 **Technologies to be used must include React.**
+
+</aside>
+
+<aside>
+💡 Make frequent atomic commits to your GitHub repository and keep standard on commit messages.
+
+</aside>
+
+- Create a page like Linktree that allows a person show their personal profile and link to various digital things that they sell. **Details below.**
+- Make frequent atomic commits to your GitHub repository and keep standard on commit messages.
+- **You can host on Netlify, Github pages or Vercel.**
+
+## The profile section
+
+- A profile picture with an id ‘**profile__img**’
+- Your twitter username with an id ‘**twitter**’
+- Your slack username with an id ‘**slack**’ - **but this should be hidden (available in code, but cannot be seen)**
+
+## The links section
+
+- An Anchor tag  styled as a Button with an id **‘btn__zuri’** that redirects to “[https://training.zuri.team/](https://training.zuri.team/)”
+- An Anchor tag styled as a Button with an id **‘books’** that redirects to [http://books.zuri.team](http://books.zuri.team)
+ with the title and a subtext describing that this is where you find books about design and coding
+- An Anchor tag styled as a Button with an id **‘book__python’** that redirects to to [https://books.zuri.team](https://books.zuri.team)/python-for-beginners?ref_id=<yourslackname>, 
+with a subtext where you feature the book as if you were selling it.The reference id must be unique and will give you royalties if any sales of the book come
+- An Anchor tag styled as a Button with an id **‘pitch’** that redirects to to [https://background.zuri.team](https://background.zuri.team),
+ with a subtext where you pitch a service for doing background checks on coders. Use a good, selling sentence.
+- An Anchor tag styled as a Button with an id **‘book__design’** that redirects to to [https://books.zuri.team/design-rules](https://books.zuri.team/design-rules) 
+with a subtext where you pitch the free design book offered by Zuri.
+
+**Frontend Design**
+
+[Designs for frontend](https://www.figma.com/file/m2C1MHd8vASrLqfxSUdgxD/Designs-for-frontend?node-id=4623%3A431129)
+
+Submission Link: 
+
+**Submit your Slack username and your hosted (either Netlify or GitHub pages or Vercel) link and email address**
+/* Stage 1 Task */
+
+
+///
+Created 03-11-2022 15:14:55
+
+Create a Carousel/Slideshow with 6 different images of  your choice. Ensure the following:
+The images are properly styled.
+Directional icons (previous and next Icons ) are shown on the images only when hovered
+On clicking the icons, it should show the next/previous image. 
+When the next icon on the last image is clicked, it should show the first image.
+When the previous icon on the first image is clicked, it should show the last image. 
+Submission Mode
+GitHub Link
+///////////////////////////////////
+.....
+"cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-mongo-sanitize": "^1.3.2",
+    "express-rate-limit": "^3.5.0",
+    "helmet": "^3.16.0",
+    "hpp": "^0.2.2",
+    "html-to-text": "^5.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.2",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "nodemailer": "^6.1.1",
+    "pug": "^2.0.3",
+    "sharp": "^0.22.1",
+    "slugify": "^1.3.4",
+    "stripe": "^7.0.0",
+    "validator": "^10.11.0",
+    "xss-clean": "^0.1.1"
+
+    /////dependencies
+    {
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Learning Node,Express and mongoDb",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.mjs",
+    "debug": "ndb server.js",
+    "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/bundled ",
+    "build:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "start:prod": "NODE_ENV=production nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathewCodex.git"
+  },
+  "author": "mathewCodex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathewCodex/issues"
+  },
+  "homepage": "https://github.com/mathewCodex#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.1.3",
+    "cookie-parser": "^1.4.6",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "express": "^4.18.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "hbs": "^4.2.0",
+    "helmet": "^3.16.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^5.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "mapbox-gl": "^2.12.0",
+    "multer": "^1.4.1",
+    "nodemailer": "^6.8.0",
+    "npm-install-global": "^1.0.0",
+    "prettier": "^2.7.1",
+    "pug": "^3.0.2",
+    "sharp": "^0.22.1",
+    "slugify": "^1.6.5",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
