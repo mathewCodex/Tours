@@ -1,4 +1,4 @@
- DATABASE=mongodb+srv://mathewCodex:for12345@cluster1.avjfq.mongodb.net/Tours?retryWrites=true&w=majority
+
 /////Zuri task 
 > Create a portfolio having the following HTML pages:
 1. Home: The homepage should contain your data (bio).
